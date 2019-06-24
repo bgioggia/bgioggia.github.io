@@ -1,0 +1,417 @@
+a:link {
+  text-decoration: none;
+}
+
+body{
+	margin:0;
+	display:grid;
+	grid-template-rows: repeat(100, 1vh);
+	grid-template-columns: repeat(100, 1vw);
+	grid-auto-columns:1vw;
+	grid-auto-rows:1vh;
+	font-family: 'Abel', sans-serif;
+	   overflow: hidden;
+}
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+.Title{
+	font-size:2.3vh;
+	height:10vh;
+	font-style:bold;
+	color: black;
+	text-align: center;
+	background-color: #F5F5F5;
+	margin-top: 0;
+ 	margin-bottom: 0;
+ 	border-top-right-radius:3vh;
+ 	border-top-left-radius:3vh;
+ 	border-color:black;
+ 	border-style:solid;
+    justify-content: center;
+    align-items: center;
+}
+
+.Tabs{
+	color: black;
+	background-color: #F5F5F5;
+	margin-top: 0;
+ 	margin-bottom: 0;
+ 	height:5vh;
+ 	border-bottom-right-radius:3vh;
+ 	border-bottom-left-radius:3vh;
+ 	border-color:black;
+ 	border-style:solid;
+}
+
+
+
+.TabSpacer{
+	width: 16vw; 
+	height:1vw; 
+	float:left; 
+	display:inline-block;
+}
+
+
+.Tab{
+	line-height:5vh;
+	display: inline-block;
+	position:absolute;
+    font-size:2.3vh;
+	height:5vh;
+	width:10vw;
+	margin-left:7.7vw;
+	margin-right:7.7vw;
+	background-color: #F5F5F5;
+	text-align:center;
+	transition:.5s;
+	border-color:#F5F5F5;
+	border-right-style: solid;
+	border-left-style: solid;
+	border-left-width:0.3vw;
+	border-right-width:0.3vw;
+	color:black;
+	text-decoration: none;
+}
+
+
+.Tab:hover{
+	background-color: white;
+	border-color:black;
+	transition:.5s;
+	margin-left:7.7vw;
+	margin-right:7.7vw;
+	user-select:none;
+}
+
+.Tab:active{
+	background-color: black;
+	transition:0s;
+	color: white;
+}
+
+
+.Banner{
+	grid-column-start:6;
+	grid-column-end: 96;
+	grid-row-start:3;
+	z-index:901;
+}
+
+#GithubIcon{
+	grid-column: 41;
+	grid-row:90;
+	height:60px;
+	width:60px;
+	background-size:60px 60px;
+	z-index: 100;
+	border-radius:5vw;
+	background-image: url(../Images/git1.png);background-repeat:no-repeat;
+}
+@media screen and (max-width: 770px) { 
+	#GithubIcon{
+	grid-column: 5;
+	grid-row:75;
+	background-size:12vw 12vw;
+	height:12vw;
+	width:12vw;
+	}
+}
+
+
+#GithubIcon:hover{
+	background-image: url(../Images/git2.png);
+	transition:0.5s;
+}
+
+#LinkedinIcon{
+	grid-column: 57;
+	grid-row:90;
+	height:60px;
+	width:60px;
+	background-size:60px 60px;
+	z-index: 100;
+	border-radius:5vw;
+	background-image: url(../Images/linkedin2.png);background-repeat:no-repeat;
+}
+@media screen and (max-width: 770px) { 
+	#LinkedinIcon{
+		grid-column: 5;
+		grid-row:45;
+		background-size:12vw 12vw;
+		height:12vw;
+		width:12vw;
+
+	}
+}
+
+
+#LinkedinIcon:Hover{
+	background-image: url(../Images/linkedin1.png);
+	transition:0.5s;
+}
+
+
+#EmailIcon{
+	grid-column: 49;
+	grid-row:90;
+	height:60px;
+	width:60px;
+	background-size:60px 60px;
+	z-index: 100;
+	border-radius:5vw;
+	background-image: url(../Images/email1.png);background-repeat:no-repeat;
+}
+
+@media screen and (max-width: 770px) { 
+	#EmailIcon{
+	grid-column: 5;
+	grid-row:60;
+	background-size:12vw 12vw;
+	height:12vw;
+	width:12vw;
+	}
+}
+
+#EmailIcon:Hover{
+	background-image: url(../Images/email2.png);
+	transition:0.5s;
+}
+
+.Photos{
+	font-size:2.3vh;
+	height:100%;
+	width:100%;
+    display: flex;
+    float:left;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+}
+.Resume{
+	font-size:2.3vh;
+	height:100%;
+	width:100%;
+    display: flex;
+    float:center;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+}
+.Projects{
+	font-size:2.3vh;
+	height:100%;
+	width:100%;
+    display: flex;
+    float:right;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+}
+
+.Profile{
+	border-radius:1vw;
+	grid-column-start:10;
+	grid-row-start:20;
+	margin-top:2vw;
+
+
+	z-index:5;
+		transition:2s;
+}
+
+#Profile{
+	background-image: url(../Images/Brandon.png);
+	background-position:center;
+	background-size:contain;
+		width:30vw;
+	height:30vw;
+	border-radius:1vw;
+
+
+}
+
+.AboutMe1{
+	margin-top:26.5vw;
+	margin-left:19vw;
+	color:white;
+	font-size:3vw;
+	position:absolute;
+	z-index:3;
+}
+.AboutMe2{
+	margin-top:26.5vw;
+	margin-left:19vw;
+	color:black;
+	font-size:3.05vw;
+	position:absolute;
+	z-index:2;
+}
+
+
+.Bio1 {
+	transition:2s;
+	opacity:.5;	
+	background-color:purple;
+	grid-row-start:31;
+	grid-row-end:41;
+	grid-column-start:1;
+	grid-column-end:21;
+	z-index: -2;
+}
+
+@media screen and (max-width: 1024px) {
+.Bio1 {
+	opacity:.5;	
+	background-color:purple;
+	grid-row-start:25;
+	grid-row-end:31;
+	grid-column-start:1;
+	grid-column-end:21;
+	z-index: -2;
+	}
+}
+
+
+.Bio2{
+	grid-row-start:16;
+	grid-column-start:21;
+	opacity:.7;
+	background-color:#cceeff;
+	width:60vw;
+	height:90vh;
+	z-index: 3;
+	transition:2s;
+}
+
+.Bio2:hover{
+	margin-left:-2vw;
+	width:68vw;
+	transition:2s;
+}
+#flag:hover ~ .Bio2{
+	margin-left:-2vw;
+	width:68vw;
+	transition:2s;
+}
+
+#flag:hover ~ .Bio1 {
+	transition:1s;
+	margin-top:2vw;
+	margin-bottom:-3vw;
+	margin-left:-1vw;
+	transform: rotate(10deg);
+
+}
+
+#flag:hover ~ .Bio3 {
+	transition:3s;
+	margin-top:20vw;
+	margin-bottom:-30vw;
+	margin-left:-5vw;
+	transform: rotate(-375deg);
+
+}
+
+#flag:hover ~ .Profile {
+	transition:2s;
+	margin-left:-2vw;
+
+}
+
+
+.Bio3{
+	grid-row:40;
+	grid-column:60;
+	opacity:.5;
+	background-color:orange;
+	width:40vw;
+	height:12vw;
+	z-index: 2;
+	transition:2s;
+	transform: rotate(5deg);
+}
+
+
+.Bio4{	
+	overflow:wrap;
+	grid-row:35;
+	grid-column-start:45;
+	grid-column-end:65;
+	font-size:1.25vw;
+	opacity:1;
+	z-index: 100;
+	transition:2s;
+}
+
+.Bio4:hover{	
+	overflow:wrap;
+	margin-left:-5vw;
+	margin-right:-5vw;
+	grid-row:35;
+	grid-column-start:45;
+	grid-column-end:65;
+	font-size:1.5vw;
+	transition:2s ;
+}
+
+.Tab:hover > .Dropdown-Content{
+	display:block;
+}
+
+.Dropdown-Content {
+	display:none;
+  position: absolute;
+  background-color: #F5F5F5;
+  margin-left:-.3vw;
+  width:10.6vw;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.Dropdown {
+  position: relative;
+}
+
+.Dropdown-Content a {
+  color: black;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+	background-color: black;
+}
+
+.drop{
+	border-top-width:.05vw;
+	border-bottom-width:.05vw;
+	border-right-width:.3vw;
+	border-left-width:.3vw;
+	border-style:solid;
+	transition:0.3s;
+}
+.drop:hover{
+	border-left-width:0.1vw;
+	border-right-width:0.1vw;
+		transition:0.3s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

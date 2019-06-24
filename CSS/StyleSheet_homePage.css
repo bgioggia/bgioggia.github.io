@@ -112,7 +112,8 @@ img {
 	background-size:60px 60px;
 	z-index: 100;
 	border-radius:5vw;
-	background-image: url(../Images/git1.png);background-repeat:no-repeat;
+	background-image: url(../Images/Git1.png);
+	background-repeat:no-repeat;
 }
 @media screen and (max-width: 770px) { 
 	#GithubIcon{
@@ -126,7 +127,7 @@ img {
 
 
 #GithubIcon:hover{
-	background-image: url(../Images/git2.png);
+	background-image: url(../Images/Git2.png);
 	transition:0.5s;
 }
 

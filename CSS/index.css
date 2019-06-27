@@ -7,12 +7,14 @@ body{
 	display:grid;
 	grid-template-rows: repeat(100, 1vh);
 	grid-template-columns: repeat(100, 1vw);
+	-ms-grid-rows: (1vh)[100];
+	-ms-grid-columns: (1vw)[100];
 	grid-auto-columns:1vw;
 	grid-auto-rows:1vh;
 	font-family: 'Abel', sans-serif;
 	   overflow: hidden;
 }
-}
+
 
 img {
     max-width: 100%;
@@ -163,6 +165,8 @@ img {
 #EmailIcon{
 	grid-column: 49;
 	grid-row:90;
+	-ms-grid-column: 49;
+	-ms-grid-row:90;
 	height:60px;
 	width:60px;
 	background-size:60px 60px;
@@ -176,6 +180,8 @@ img {
 	#EmailIcon{
 	grid-column: 5;
 	grid-row:60;
+	-grid-column: 5;
+	-grid-row:60;
 	background-size:12vw 12vw;
 	height:12vw;
 	width:12vw;

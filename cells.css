@@ -11,16 +11,16 @@ body{
 .Title{
 	position:absolute;
 	text-decoration:none;
-	font-size:6vh;
-	z-index: 100:;
-	font-color:black;
+	font-size:3vw;
+	z-index: 100;
+	font-color: black;
 	border-style:solid;
 	left:0;
 	height:8vh;
 	width:25vw;
 	margin-top:2vh;
 	margin-left:5vw;
-	border-radius:50%;
+	border-radius:1vw;
 	opacity:.5;
 }
 

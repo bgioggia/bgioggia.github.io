@@ -13,7 +13,7 @@ body{
 	grid-auto-columns:1vw;
 	grid-auto-rows:1vh;
 	font-family: 'Abel', sans-serif;
-	   overflow: hidden;
+	  /* overflow: hidden;*/
 }
 
 
@@ -454,7 +454,7 @@ img {
 	/*grid-row:35;
 	grid-column-start:45;
 	grid-column-end:65;*/
-	width:20vw;
+	width:25vw;
 	font-size:1.25vw;
 	opacity:.6;
 	z-index: 100;
@@ -464,14 +464,16 @@ img {
 }
 
 .Bio4:hover{
+	color:black;
 	opacity:1;
 	-webkit-transition:2s;
 	-o-transition:2s;
 	transition:2s;
-	margin-left:28vw;
+	margin-left:26vw;
 }
 .Bio2:hover > .Bio4 {
 	opacity:1;
+	color:black;
 	-webkit-transition:2s;
 	-o-transition:2s;
 	transition:2s;
@@ -508,6 +510,7 @@ img {
 }
 
 .drop{
+	font-size:1.3vw;
 	border-top-width:.05vw;
 	border-bottom-width:.05vw;
 	border-right-width:.3vw;
